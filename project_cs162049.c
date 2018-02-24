@@ -38,7 +38,8 @@ int main(){
 		printf("\n");
 		printf("Sorry data of this student not available");
 	}
-	
+	if(fname != NULL)
+	{
 	for(i = 0 ; i < 9 ; i++)
 	{
 		fgets(array[i],100,fname);
@@ -70,6 +71,7 @@ int main(){
 	printf("E-mail:");
 	puts(array[8]);
 	printf("\n");
+	}
 	}
 	fclose(fname);
 	break;
@@ -174,7 +176,8 @@ int main(){
 			}
 			
 		}
-}
+}	
+	printf("\n");
 	printf("Would you like to continue using Course Mash y/n :");
 	scanf("%s",&ch);
 	printf("\n\n\n");
